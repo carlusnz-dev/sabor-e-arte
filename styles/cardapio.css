@@ -1,0 +1,91 @@
+.cardapio-header {
+    padding: 50px 20px 20px; 
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cardapio-categoria {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.categoria-titulo {
+    font-size: 3.5rem;
+    color: #b30000;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #f9d71c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.cardapio-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
+
+.cardapio-container .cardapio-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardapio-item h3 {
+    color: #b30000;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.cardapio-item .preco {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cardapio-item .descricao {
+    font-size: 0.95em;
+    color: #666;
+    font-style: italic;
+}
+
+.categoria-especial {
+    background-color: #fcf6e7; 
+    border-radius: 15px;
+    border: 1px solid #f9d71c;
+}
+
+.item-destaque {
+    border-color: #f9d71c !important; 
+    background-color: #fffaf0 !important;
+}
+
+/* Responsividade do Cardápio */
+@media (max-width: 768px) {
+    .categoria-titulo {
+        font-size: 2.5rem;
+    }
+    
+    .cardapio-container {
+        gap: 20px;
+    }
+
+    .cardapio-container .cardapio-item {
+        width: 45%;
+    }
+
+    .cardapio-container .cardapio-item img {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardapio-container .cardapio-item {
+        width: 90%;
+    }
+}

@@ -1,0 +1,192 @@
+.about-title, .just-font {
+    color: #b30000;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.about-section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.about-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    align-self: flex-start;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    color: #b30000;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px dashed #f9d71c;
+    padding-bottom: 5px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.container-contato {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+    width: 90%;
+    margin: 40px auto;
+    text-align: left;
+    border-top: 5px solid #b30000;
+}
+
+.container-contato h2 {
+    text-align: center;
+    color: #b30000;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.contato-intro {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.btn-whatsapp {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    background-color: #25d366;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+    transform: translateY(-2px);
+}
+
+.separator {
+    text-align: center;
+    margin: 30px 0;
+    color: #777;
+    font-style: italic;
+    position: relative;
+}
+
+.separator::before, .separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 35%;
+    height: 1px;
+    background: #ccc;
+}
+
+.separator::before {
+    left: 0;
+}
+
+.separator::after {
+    right: 0;
+}
+
+.form-grupo {
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #333;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    border-color: #f9d71c;
+    outline: none;
+    box-shadow: 0 0 8px rgba(249, 215, 28, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #b30000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #8c0000;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .container-contato {
+        padding: 20px;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .about-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-title {
+        font-size: 2.5rem;
+    }
+}
